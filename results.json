@@ -29,17 +29,17 @@
                 "n_estimators": 100
             },
             "SVR": {
-                "C": 10.0,
+                "C": 10,
                 "kernel": "rbf"
             },
             "KNN": {
-                "n_neighbors": 9,
+                "n_neighbors": 5,
                 "weights": "distance"
             },
             "MLP": {
-                "alpha": 0.0001,
+                "alpha": 0.001,
                 "hidden_layer_sizes": [
-                    100
+                    50
                 ]
             }
         },
@@ -50,15 +50,15 @@
                 "n_estimators": 100
             },
             "SVC": {
-                "C": 10.0,
-                "kernel": "rbf"
+                "C": 10,
+                "kernel": "linear"
             },
             "KNN": {
-                "n_neighbors": 9,
+                "n_neighbors": 5,
                 "weights": "distance"
             },
             "MLP": {
-                "alpha": 0.0001,
+                "alpha": 0.001,
                 "hidden_layer_sizes": [
                     100
                 ]
@@ -67,12 +67,12 @@
     },
     "cv_stability": {
         "Regression_R2": {
-            "mean": 0.8523,
-            "std": 0.0124
+            "mean": 0.8468537439208366,
+            "std": 0.016505799343947258
         },
         "Classification_Accuracy": {
-            "mean": 0.9102,
-            "std": 0.0087
+            "mean": 0.7385858585858586,
+            "std": 0.006639061303092925
         }
     }
 }
