@@ -30,16 +30,18 @@
             },
             "SVR": {
                 "C": 10,
+                "gamma": "auto",
                 "kernel": "rbf"
             },
             "KNN": {
+                "metric": "manhattan",
                 "n_neighbors": 5,
                 "weights": "distance"
             },
             "MLP": {
-                "alpha": 0.001,
+                "alpha": 0.01,
                 "hidden_layer_sizes": [
-                    50
+                    100
                 ]
             }
         },
@@ -51,28 +53,30 @@
             },
             "SVC": {
                 "C": 10,
+                "gamma": "scale",
                 "kernel": "linear"
             },
             "KNN": {
+                "metric": "manhattan",
                 "n_neighbors": 5,
-                "weights": "distance"
+                "weights": "uniform"
             },
             "MLP": {
-                "alpha": 0.001,
+                "alpha": 0.0001,
                 "hidden_layer_sizes": [
-                    100
+                    50
                 ]
             }
         }
     },
     "cv_stability": {
         "Regression_R2": {
-            "mean": 0.8468537439208366,
-            "std": 0.016505799343947258
+            "mean": 0.9142382689436717,
+            "std": 0.008185799153072222
         },
         "Classification_Accuracy": {
-            "mean": 0.7385858585858586,
-            "std": 0.006639061303092925
+            "mean": 0.8061414141414142,
+            "std": 0.006641028141027674
         }
     }
 }
